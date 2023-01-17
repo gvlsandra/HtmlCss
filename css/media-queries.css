@@ -1,0 +1,191 @@
+@media screen and (max-width: 980px) {
+    .main, .about, .education, .skills, .hobby, .contacts  {
+        padding: 5% 2% 6% 2%;
+    }
+
+    .main-title {
+        font-size: 70px;
+    }
+    
+    .skills .container {
+        justify-content: center;
+    }
+
+    .skills-item {
+        display: flex;
+        margin-top: 35px;
+        align-items: center;
+        width: calc( ( 100% - 160px ) / 3 );
+    }
+
+    .education .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 5;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .skills-item {
+        width: 30%;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 12px;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: var(--second-color);
+        margin-bottom: 2px;
+        transition: .6s all;
+    }
+
+    
+    .hamburger-active span {
+        margin-bottom: -2px;
+    }
+
+    .hamburger-active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    .hamburger-active span:nth-child(2) {
+        display: none;
+    }
+
+    .hamburger-active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        flex-direction: column;
+        background-color: rgba(0,0,0,.8);
+        justify-content: center;
+        align-items: center;
+        transition: .6s all;
+    }
+
+    .menu ul {
+        display: list-item;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .menu-item a {
+        font-size: 20px;
+        color: beige;
+    }
+
+    .menu-active {
+        left: 0;
+    }
+    
+    .social-menu {
+        display: none;
+    }
+
+    .skills-item {
+        width: 50%;
+    }
+
+    .contacts .contacts-form {
+        display: block;
+    }
+
+    .contacts-item {
+        margin-top: 25px;
+        height: 30px;
+    }
+
+    .contacts-textarea {
+        height: 75px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .main, .about, .education, .skills {
+        padding: 5% 6% 6% 6%;
+    }
+
+    .about .container {
+         display: block; 
+    }
+
+    .hobby, .contacts {
+        padding: 6% 6% 15% 6%;
+    }
+
+    h2 {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    .main button {
+        padding: 0px;
+        width: 50%;
+    }
+    
+    .slides {
+        width: -webkit-fill-available;
+    }
+
+    .slider {
+        margin-top: 20px;
+    }
+
+    .hobby .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 50%;
+    }
+
+    .contacts-triggers {
+       display: block;
+    }
+
+    .skills .container {
+        margin: 0 auto;
+    }
+
+    .skills-item {
+        flex-direction: column;
+    }
+
+    .skills-item img {
+        margin: 0 auto;
+    }
+}
